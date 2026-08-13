@@ -68,6 +68,11 @@
     margin-top:2px;
   }
   .role-toggle{display:flex; gap:6px; margin-top:14px;}
+  .disclaimer-banner{
+  background:#3A2E1A; color:#F2E4C6; text-align:center;
+  font-size:12px; padding:8px 16px; line-height:1.5;
+}
+.disclaimer-banner strong{color:#F7D98A;}
   .role-pill{flex:1; text-align:center; font-size:11px; padding:6px 0; border-radius:6px; background:rgba(255,255,255,0.06); color:#B9C0B5; cursor:pointer;}
   .role-pill.active{background:#7FA593; color:#12241D; font-weight:600;}
   .group-label{
@@ -336,12 +341,15 @@
 </head>
 <body>
 
+<div class="disclaimer-banner">
+  <strong>Design preview only</strong> — this is not the live app. Nothing you enter here is saved, and no real messages, calls, or payments are sent.
+</div>
 <div class="app">
 
   <div class="sidebar">
     <div class="sidebar-title">
       <div class="mark">ShopLedger</div>
-      <div class="sub">Full UX prototype &middot; 18 screens</div>
+      <div class="sub">Full UX prototype &middot; 53 screens</div>
       <div class="role-toggle">
         <div class="role-pill active" data-role="owner" onclick="setRole('owner')">Owner view</div>
         <div class="role-pill" data-role="staff" onclick="setRole('staff')">Staff view</div>
